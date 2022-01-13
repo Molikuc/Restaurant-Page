@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#content {
+  background: #0c8ecb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  background: #075579;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  font-family: "Secular One", sans-serif;
+}
+
+.button-nav {
+  background: #075579;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-nav:hover {
+  background: rgba(31, 32, 32, 0.3);
+}
+
+.main {
+  max-width: 700px;
+  padding: 4rem;
+  font-family: "Secular One", sans-serif;
+  border: 1px black solid;
+  background: rgba(31, 32, 32, 0.3);
+  margin: 6rem 0;
+}
+
+/* Home Page */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s;
+}
+
+.home p {
+  padding: 1rem;
+}
+
+.home img {
+  width: 70%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Menu Page */
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  animation: fadeIn 1.5s;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+  background: rgba(31, 32, 32, 0.3);
+}
+
+.menu-item img {
+  width: 60%;
+  height: 60%;
+}
+
+Contact Page .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 600px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #075579;
+  height: 70px;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .home,
+  .contact {
+    height: 100%;
+    width: 100%;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item img {
+    width: auto;
+    height: 80%;
+  }
+}

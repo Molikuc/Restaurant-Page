@@ -7,7 +7,7 @@ function createHome(){
     image.src = "./images/image.jpg";
 
 
-    home.appendChild(createParagraph("Midnight Pretenders has the best Japaanes food all around"));
+    home.appendChild(createParagraph("Midnight Pretenders has the best Japanese food all around"));
     home.appendChild(createParagraph("Since 1789"));
     home.appendChild(image);
     home.appendChild(createParagraph('Please visit us'));
